@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { HashRouter, Route} from 'react-router-dom'
-import {Link} from 'react-router-dom'
 import Index from './components/Index'
 import Film from './components/Film'
 
