@@ -24,7 +24,10 @@ class Index extends Component {
       this.state.films.results.map(data => {
         let paramsId = data.url.slice(27);
         return (
-          <Link className="index__link" to={`/film/`+ paramsId} key={data.episode_id}>{data.title}</Link>
+          <Link className="index__link" to={`/film/`+ paramsId} key={data.episode_id}>
+          {data.title}
+          <p>click for more</p>
+          </Link>
         )
       })
     ) : (

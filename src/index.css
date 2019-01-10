@@ -3,11 +3,55 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Raleway', sans-serif;
-  font-size: 18px;
   text-decoration: none;
 }
-
+.title{
+  text-align: center;
+  padding: 20px;
+  font-size: 20px;
+}
+.index{
+  width: 50%;
+  margin: 20px auto;
+}
 .index__link{
   display: block;
   color: #000;
+  margin-bottom: 20px;
+  border: 1px #00dcff solid;
+  border-radius: 5px;
+  padding: 20px;
+  transition: all 200ms ease;
+  background: #e8e8e8;
+}
+
+.index__link > p{
+  color: grey;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.index__link:hover{
+  box-shadow: 1px 1px 9px #000;
+}
+
+.film{
+  width: 60%;
+  margin: 0 auto;
+}
+
+.film > div >p{
+  font-size: 20px;
+  margin-top: 15px;
+  
+}
+
+.film > div> p> span{
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.film__content{
+  background:#fffdf5;
+  padding: 20px;
 }

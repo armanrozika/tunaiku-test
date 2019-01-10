@@ -20,10 +20,13 @@ class Film extends Component {
   render() {
     //console.log(this.state.filmInfo)
     let singleFilm = this.state.filmInfo ? (
-      <div>
-        <p>Title: {this.state.filmInfo.title}</p>
-        <p>Quote: {this.state.filmInfo.opening_crawl}</p>
-        <p>Year: {this.state.filmInfo.release_date}</p>
+      <div className="film__content">
+        <p>Title: <span>{this.state.filmInfo.title}</span></p>
+        <p>Release Date: <span>{this.state.filmInfo.release_date}</span></p>
+        <p>Director: <span>{this.state.filmInfo.director}</span></p>
+        <p>Producer: <span>{this.state.filmInfo.producer}</span></p>
+        <p>Synopsis: <span>{this.state.filmInfo.opening_crawl}</span></p>
+       
       </div>
         
     ):(
